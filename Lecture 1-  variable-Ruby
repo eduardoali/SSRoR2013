@@ -1,0 +1,137 @@
+Lecture nr 1 ( Day one)
+
+
+
+
+To reverse your name, type: "Jimmy".reverse (Don't forget the dot!)
+
+Counting the Letters
+Objective:
+You have used the reverse method on your name!
+By enclosing your name in quotes, you made a string. Then you called the reverse method, which works on strings to flip all the letters backwards.
+Now, let's see how many letters are in your name: "Jimmy".length
+
+
+Boys are Different From Girls
+Objective:
+And numbers are different from strings. While you can use methods on any object in Ruby, some methods only work on certain types of things. But you can always convert between different types using Ruby's "to" methods.
+to_s converts things to strings. 
+to_i converts things to integers (numbers.) 
+to_a converts things to arrays. 
+What are arrays?! They are lists. Type in a pair of brackets: [].
+
+
+ 40.to_s.re­verse
+
+
+One Raises Its Hand
+Objective:
+A list of lottery numbers. Which one is the highest?
+Try: [12, 47, 35].max.
+
+
+Tucking a List Away
+Objective:
+Good, good. But it's annoying to have to retype that list, isn't it?
+Let's save our numbers inside a ticket like so: ticket = [12, 47, 35]
+Guardamos os numeros dentro de uma variavel chamada tickect
+
+
+
+Saved, Tucked Away
+Objective:
+Fantastic! You've hung on to your lotto numbers, tucking them away inside a variable called ticket.
+Let's put your lotto numbers in order, how about? Use: ticket.sort! (Organizamos os nr em ordem crescente)
+
+ticket.sor­t
+=> [12, 15, 35, 47]
+
+When you want to move on, type next
+
+
+Summary #2 is Upon Us
+Objective:
+You had a list. You sorted the list. The ticket variable is now changed.
+Did you notice that the sort! method has a big, bright exclamation at the end? A lot of times Ruby methods shout like that if they change what the variable contains for good. It's nothin' special, just a mark.
+Now, look how your second minute went:
+Errors. If you try to reverse a number or do anything fishy, Ruby will skip the prompt and tell you so. 
+Arrays are lists for storing things in order. 
+Variables save a thing and give it a name. You used the equals sign to do this.
+Like: ticket = [14, 37, 18]. 
+In all there are eight lessons. You are two-eighths of the way there! This is simple stuff, don't you think? Good stuff up ahead.
+Let's change directions for a moment. I've stuffed a bit of poetry for you in a certain variable. Take a look. Type print poem
+
+
+Sadly, You Hate Toast Poetry
+Objective:
+Look, it's okay. You don't have to like it. Hack it up, be my guest.
+Instead of toast, go for a melon or something. Try this: poem['toast'] = 'honeydew'
+
+
+Of All the Summaries, #3 is Here Now
+Objective:
+Good show, my friend! The join method took that list of reversed lines and put them together into a string. (Sure, you could have also just used to_s.)
+Review time.
+Exclamations. Methods may have exclamations (and also question marks) in their name. No big deal. Try: poem.include? "my hand" 
+Square brackets. Target and find things. Search and replace. 
+Chaining methods lets you get a lot more done. Break up a poem, reverse it, reassemble it: poem.lines.to_a.reverse.join 
+At this point, you may want to tinker with the poem a bit more. A complete list of all the String methods is here. Go ahead and try a few (such as poem.downcase or poem.delete.)
+When you're ready to move on, type: books = {}
+
+
+Exclamations. Methods may have exclamations (and also question marks) in their name. No big deal. Try: poem.include? "my hand" -  procura no poema se tem a palavra “my Hand”
+
+
+
+A Wee Blank Book
+Objective:
+You've made an empty hash. (Also known as: an empty dictionary.)
+We're going to stuff some miniature book reviews in this hash. Here's our rating system:
+:splendid → a masterpiece. 
+:quite_good → enjoyed, sure, yes. 
+:mediocre → equal parts great and terrible. 
+:quite_not_good → notably bad. 
+:abysmal → steaming wreck. 
+To rate a book, put the title in square brackets and put the rating after the equals.
+For example: books["Gravity's Rainbow"] = :splendid  -  estamos a dar o valor splendid a Gravity Rainbow no array books
+
+
+Wait, Did I Like Gravity's Rainbow?
+Objective:
+See, the length method works on strings, list and hashes. One great thing about Ruby is that names are often reused, which means fewer names you need to remember.
+If you'd like to look up one of your old reviews, again put the title in the square. But leave off the equals.
+Just like this: books["Gravity's Rainbow"]
+Are You Harsh?
+Objective:
+So are you giving out harsh, unfair reviews? Let's keep score with this hash: ratings = Hash.new(0)
+
+Then, okay, now let's count up your reviews. Just stay with me. Type: books.values.each { |rate| ratings[rate] += 1 }
+(The straight line in the code is the pipe character, probably located right above the Enter key on your keyboard.)
+After that, type ratings to see the count. This new hash shows a rating and then the number of times you've given that rating.
+When you want to move on, type next
+   
+books.valu­es.each{|r­ate| ratin­gs [rate­] +=1}
+=> [:splendid]
+
+
+Now Arriving at Summary #4
+Objective:
+Blocks are always attached to methods. Like the times method, which takes the block and runs the code over and over. (In this case: five times.)
+This last lesson was a bit longer. You've probably used up three minutes learning about:
+Hashes. The little dictionary with the curly pages: {}. 
+Symbols. Tiny, efficient code words with a colon: :splendid. 
+Blocks. Chunks of code which can be tacked on to many of Ruby's methods. Here's the code you used to build a scorecard: books.values.each { |rate| ratings[rate] += 1 }. 
+On your computer, you probably have a lot of different files. Files with pictures in them, files with programs in them. And files are often organized into folders, also called: directories.
+I've prepared a few directories for you. Take a look: Dir.entries "/"
+
+Important Links 
+
+http://ruby-doc.org/core-2.0/String.html
+
+http://ruby-doc.org/core-2.0/String.html
+
+http://tryruby.org/levels/5/challenges/4
+
+https://github.com/ict4g/ssror13_material/tree/master/slides
+
+
